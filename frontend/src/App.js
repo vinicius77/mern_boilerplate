@@ -28,7 +28,7 @@ function App() {
 				price: +productPrice,
 			};
 			let hasError = false;
-			const response = await fetch('http://localhost:5000/product', {
+			const response = await fetch('http://localhost:5000/products', {
 				method: 'POST',
 				body: JSON.stringify(newProduct),
 				headers: {
